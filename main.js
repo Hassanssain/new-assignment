@@ -1,13 +1,13 @@
 let items = [];
 
-// Function to add an item to the list
+
 function add(item) {
     if (!items.includes(item)) {
         items.push(item);
     }
 }
 
-// Function to remove an item from the list
+
 function remove(item) {
     const index = items.indexOf(item);
     if (index !== -1) {
@@ -15,26 +15,26 @@ function remove(item) {
     }
 }
 
-// Function to get the last character of a string
+
 function lastChar(str) {
-    if (str.length === 0) return null; // Handle empty string case
+    if (str.length === 0) return null; 
     return str[str.length - 1];
 }
 
-// Function to reverse a string
+
 function reverse(str) {
     return str.split('').reverse().join('');
 }
 
-// Example usage
+
 add('apples');
 add('bananas');
-console.log(items); // Output: ['apples', 'bananas']
+console.log(items); 
 
 remove('apples');
-console.log(items); // Output: ['bananas']
+console.log(items); 
 
-console.log(lastChar('JavaScript')); // Output: 't'
-console.log(reverse('JavaScript')); // Output: 'tpircSavaJ'
-console.log(reverse(reverse('JavaScript'))); // Output: 'JavaScript'
+console.log(lastChar('JavaScript'));
+console.log(reverse('JavaScript')); 
+console.log(reverse(reverse('JavaScript')));
 
